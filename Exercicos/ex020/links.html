@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(212, 112, 112, 0.795);
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: rgb(196, 19, 196);
+        }
+
+        a::after{
+            content: ' ←';
+        }
+
+        a::before{
+            content: '→ ';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Lrarissa" target="_blank" rel="external">GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UC8pc74wjoaq32QuzHnH6Ogw" target="_blank" rel="external">Canal no Youtube</a></li>
+        <li><a href="file:///C:/Users/PMVTECITAQUA/Documents/Estudos/HTML%20-%20CSS/Exercicos/ex020/links.html" target="_blank" rel="external">Site da Larissa</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'bebas';
+    src: url('fontes/BebasNeue-Regular.otf') format('opentype'); 
+}
+@font-face {
+    font-family:'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+@media only screen and (max-device-width: 900px) {
+}
+
+body{
+    background-color: #e9e6c3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 25px;
+    text-align: center;
+    margin: -22px;
+    line-height: 1.2em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #063d1e, #0e8d45);
+    color: white;
+    margin: 0px;
+    padding: 20px;    
+}
+
+header > h1{
+    text-shadow: rgba(0, 0, 0, 0.466);
+}
+
+nav{
+    background-color: #0e8d45;
+    text-align: left;
+    padding: 0px 0px 10px 0px;
+}
+
+nav > a{
+    text-decoration: none;
+    margin: 0px;
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-family: 'bebas';
+    text-align: center; 
+    
+}
+
+#principal{
+    font-family: 'idroid';
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    margin:0px 15px;  
+    color: #2fa866;
+    
+}
+
+h2{
+    font-family: 'idroid';
+    color: #2fa866;
+    background-color: #83e1ad38;
+    text-align: left;
+    margin: 15px;
+}
+
+h3{
+    
+    color: white;
+    background-color: #16a356;
+    text-align: left;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+p{
+    margin: 10px;
+}
+
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    text-align: left;
+    margin: 0px;
+    background-color: #77e7a97e;
+    margin: 0px 10px 0px 10px;
+}
+
+.fontes{
+background-color: #77e7a97e;  
+margin: 0px; 
+margin: 0px 10px 0px 10px;
+border-radius: 0px 0px 10px 10px;
+}
+
+a{
+   color: #06381c;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+div.video{
+    b
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.7%;
+    position: relative;
+}
+
+div.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+footer{
+    background-color: #0c66339c;
+    color: white;
+    padding: 4px;
+}
+
