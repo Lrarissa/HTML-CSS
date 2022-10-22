@@ -1,17 +1,20 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'FuzzyBubbles';
-    src: url(fontes/FuzzyBubbles-Bold.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @font-face {
     font-family:'Sriracha';
     src: url(fontes/Sriracha-Regular.ttf) format('truetype');
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
 :root{
-    --font-titulo: 'FuzzyBubbles', cursive;
+    --font-titulo:'Passion One' , cursive;
     --font-padrao:'Sriracha', cursive;
     --font-destaque: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -30,9 +33,9 @@ header{
 header h1{
 
     font-family: var(--font-titulo);
-    font-size: 50px;
-    padding: 20px 0px 0px 0px;
-    margin: 0px;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
     
 }
 
@@ -42,9 +45,54 @@ header p{
     margin: 0px 0px 30px 0px;
 }
 
+header a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
 main{
-    padding: 100px 40px;
+    background-color: white;
+    border-radius: 10px;
     text-align: left;
     font-family: var(--font-padrao);
-    font-size: larger;
+    
+}
+
+main p{
+    font-size: 2.8vw;
+    padding: 70px 40px;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.336);  
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: center right;
+}
+
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+}
+
+section#img2 > p{
+   color: rgb(0, 0, 0);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
