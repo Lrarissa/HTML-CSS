@@ -13,13 +13,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
             padding: 10px;
             font-weight: bold;
-            background-color:lightgrey;
-            color: rgba(0, 0, 0, 0.534);
+            background-color:rgba(95, 85, 85, 0.733);
+            color: rgb(0, 0, 0);
         }
 
         td, th{
@@ -27,9 +28,24 @@
             padding: 10px;
         }
 
+        tbody > tr:nth-child(2n-1){
+            background-color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color:rgba(95, 85, 85, 0.733);
+            
+        }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgba(0, 0, 0, 0.808);
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 0, 0, 0.596);            
         }
 
         td.num{
