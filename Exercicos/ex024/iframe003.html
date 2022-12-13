@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteúdo local no iframe</title>
+    <title>Use de iframe</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            padding: 15px;
         }
 
-        iframe{
-            display: block;
-            width: 700px;
-
+        iframe#tela{
+          width: 95vw;
+          height: 400px;
+          border: 2px solid black;  
         }
     </style>
 </head>
 <body>
-    <h1>Teste com iframe</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eum placeat, animi consequatur distinctio incidunt, aut itaque architecto fugit similique exercitationem? Deleniti soluta sapiente distinctio ex adipisci eum explicabo. Quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam reiciendis quos temporibus veritatis eveniet enim cupiditate nulla possimus aut quae, eaque necessitatibus autem quibusdam, suscipit accusantium provident nobis blanditiis tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis explicabo dignissimos reprehenderit? Earum ullam, necessitatibus nesciunt dolores id harum alias nulla blanditiis eveniet non, voluptatum, a quibusdam provident! Culpa, totam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum amet quos quisquam et nesciunt quod nulla officia vel optio dolorum, minus corrupti quis, magnam mollitia laudantium eius explicabo molestias ut.</p>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, odit molestias? Laboriosam adipisci praesentium vero at? Quasi recusandae commodi repellendus modi asperiores dolor nulla fugiat, sint rerum voluptate voluptatibus dolorum.</p>
 
-    <iframe src="pag001.html" frameborder="0" height="500" width="500"></iframe>
+        <UL>
+            <li><a href="pagimas.extras/pag001.html" target="frame">Primeira página</a></li>
+            <li><a href="pagimas.extras/pag002.html" target="frame">Segunda página</a></li>
+            <li><a href="pagimas.extras/pag003.html" target="frame">Terceira página</a></li>
+        </UL>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur error nam facilis laudantium ullam recusandae minima corporis? Atque dolores dicta hic necessitatibus, ut quam totam maxime omnis exercitationem pariatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum at officiis sunt repellat magnam explicabo. Placeat, a, ad non dolorum asperiores velit, labore beatae consectetur distinctio aliquam iste et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati sapiente vel sit nisi illo dolorum fugit est. At vero amet eos ipsa sunt! Adipisci harum accusamus aliquam, tempore aut nobis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio laudantium iste officiis excepturi sunt harum, consectetur perferendis? Accusantium ducimus accusamus maiores nihil, reiciendis dolores quasi. Error officia sunt atque obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus a delectus modi! Facilis error delectus saepe corrupti maiores perspiciatis, quo similique repudiandae sunt odio earum eos officia molestiae sapiente.</p>
+
+    <iframe src="" id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <img src='imagem/logo-html.png' alt='logo'>"></iframe>">Infelizmente seu navegador não é compatível</iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, reiciendis, qui nam nobis est repellendus ad quia, reprehenderit laborum quis aliquid sint itaque explicabo recusandae eaque corrupti magni quasi. Recusandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt officia aliquam veritatis dolorum! Ullam reiciendis itaque voluptate perspiciatis fuga accusantium quia tempora enim. Aperiam iste maiores rem ducimus quidem maxime.</p>
+    
 </body>
 </html>
