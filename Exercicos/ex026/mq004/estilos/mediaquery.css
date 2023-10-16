@@ -13,6 +13,28 @@ Grandes telas: acima de 1200px
 
 @media print {
 
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /*Desnecessario pq não fica legal*/
+}
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -26,7 +48,7 @@ Grandes telas: acima de 1200px
     img#tv {display: none;}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     body{
         background-image: url(../imagens/back-pc.jpg);
     }
@@ -37,10 +59,14 @@ Grandes telas: acima de 1200px
     img#tv {display: none;}
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
     body{
         background-image: url(../imagens/back-tv.jpg);
     }
+
+    main{
+        width: 600px;}
+
     img#phone {display: none;}
     img#tablet {display: none;}
     img#print {display: none;}
